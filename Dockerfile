@@ -11,7 +11,7 @@ WORKDIR /var/www
 COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
-
+RUN composer dump-autoload
 
 EXPOSE 10000
 
